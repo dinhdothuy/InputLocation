@@ -1,0 +1,96 @@
+/* Optional: Makes the sample page fill the window.*/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: teal;
+}
+
+#map {
+    width: 400px;
+    height: 500px;
+    float: right;
+}
+
+#navbar {
+    margin-bottom: 16px;
+}
+
+.welcome-bar{
+    display: flex;
+    margin: 16px;
+    background-color: teal;
+    color: white;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 10px;
+    text-align: center
+}
+
+.card{
+    margin: 16px;
+}
+
+.category-card{
+    margin: 16px;
+    border-radius: 10px;
+}
+
+.category-bar{
+    background-color: teal;
+    color: white;
+
+    margin: 0;
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+.category-button{
+    cursor: pointer;
+    color:#FFF;
+}
+
+.category-button:hover{
+    color: #ddd;
+}
+
+.category-deck{
+    background-color: #eee;
+}
+
+.location-card{
+    margin: 8px;
+    max-width: 250px;
+    background-color: #ddd;
+}
+
+@media only screen and (max-width: 583px){
+    .category-deck{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        min-width: 300px;
+    }
+    .welcome-bar{
+        display: flex;
+        flex-direction: column;
+    }
+    .welcome-bar div{
+        display: block;
+    }
+    .welcome-map {
+        margin: auto;
+    }
+    .category-deck{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
